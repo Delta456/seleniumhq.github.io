@@ -64,8 +64,9 @@ Returns a boolean value, **True** if the connected element is
 {{< tab header="Java" text=true >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/elements/InformationTest.java#L27-L30" >}}
 {{< /tab >}}
-  {{< tab header="Python" text=true >}}
+{{< tab header="Python" text=true >}}
 {{< gh-codeblock path="examples/python/tests/elements/test_information.py#L19" >}}
+{{< /tab >}}
 {{< tab header="CSharp" text=true >}}
 {{< gh-codeblock path="examples/dotnet/SeleniumDocs/Elements/InformationTest.cs#L25-L28" >}}
 {{< /tab >}}
@@ -76,13 +77,11 @@ Returns a boolean value, **True** if the connected element is
 {{< gh-codeblock path="/examples/javascript/test/elements/information.spec.js#L23-L24">}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
+//navigates to url
+driver.get("https://www.selenium.dev/selenium/web/inputs.html")
 
- //navigates to url
- driver.get("https://www.selenium.dev/selenium/web/inputs.html")
-
- //returns true if element is enabled else returns false
- val attr = driver.findElement(By.name("button_input")).isEnabled()
-
+//returns true if element is enabled else returns false
+val attr = driver.findElement(By.name("button_input")).isEnabled()
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -103,7 +102,7 @@ Retorna um valor booleano, **true** se o elemento referenciado for
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/elements/InformationTest.java#L32-L35" >}}
 {{< /tab >}}
 {{< tab header="Python" text=true >}}
-  {{< gh-codeblock path="examples/python/tests/elements/test_information.py#L23" >}}
+{{< gh-codeblock path="examples/python/tests/elements/test_information.py#L23" >}}
 {{< /tab >}}
 {{< tab header="CSharp" text=true >}}
 {{< gh-codeblock path="examples/dotnet/SeleniumDocs/Elements/InformationTest.cs#L30-L33" >}}
@@ -146,13 +145,13 @@ do elemento referenciado que tem o foco no contexto de navegação atual.
 {{< tab header="JavaScript" text=true >}}
 {{< gh-codeblock path="/examples/javascript/test/elements/information.spec.js#L37-L38">}}
 {{< /tab >}}
-  {{< tab header="Kotlin" >}}
- //navigates to url
- driver.get("https://www.selenium.dev/selenium/web/inputs.html")
+{{< tab header="Kotlin" >}}
+//navigates to url
+driver.get("https://www.selenium.dev/selenium/web/inputs.html")
 
- //returns TagName of the element
- val attr =  driver.findElement(By.name("email_input")).getTagName()
- {{< /tab >}}
+//returns TagName of the element
+val attr =  driver.findElement(By.name("email_input")).getTagName()
+{{< /tab >}}
 {{< /tabpane >}}
 
 ## Coletar retângulo do elemento
@@ -236,8 +235,9 @@ Recupera o texto renderizado do elemento especificado.
 {{< tab header="Java" text=true >}}
 {{< gh-codeblock path="examples/java/src/test/java/dev/selenium/elements/InformationTest.java#L54-L57" >}}
 {{< /tab >}}
-  {{< tab header="Python" text=true >}}
+{{< tab header="Python" text=true >}}
 {{< gh-codeblock path="examples/python/tests/elements/test_information.py#L41" >}}
+{{< /tab >}}
 {{< tab header="CSharp" text=true >}}
 {{< gh-codeblock path="examples/dotnet/SeleniumDocs/Elements/InformationTest.cs#L53-L56" >}}
 {{< /tab >}}
@@ -270,6 +270,7 @@ with the DOM attribute or property of the element.
 {{< /tab >}}
 {{< tab header="Python" text=true >}}
 {{< gh-codeblock path="examples/python/tests/elements/test_information.py#L44-L46" >}}
+{{< /tab >}}
 {{< tab header="CSharp" text=true >}}
 {{< gh-codeblock path="examples/dotnet/SeleniumDocs/Elements/InformationTest.cs#L58-L63" >}}
 {{< /tab >}}
